@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">  
+    <script src="https://kit.fontawesome.com/46cfeaa23d.js" crossorigin="anonymous"></script>  
+    <title>Noda Bark and Board</title>
+</head>
+<body>
+    <main>
+        <section class="sub-header">
+            <!-- <a href="index.html">
+                <img src="/img/IMG_6129.PNG" alt="Noda Bark and Board Logo">
+            </a> -->
+           <nav>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+           </nav>
+             <h1>Contact Us</h1>
+             </section>
+    
+            <!-- ------ contact us ------ -->
+            <section class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13034.935764326292!2d-80.8175279!3d35.2379926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75b279fd45886f5!2sNoDa%20Bark%20%26%20Board!5e0!3m2!1sen!2sus!4v1651603663955!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="contact-us">
+                <div class="row">
+                    <div class="contact-col">
+                        <div class="">
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>2001 North Davidson Street</h5>
+                                <p>Charlotte, North Carolina 28205, United States</p>
+                            </span>
+                        </div>
+                        <div class="">
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>704.376.0801</h5>
+                                <p>Monday-Friday, 7am-7pm</p>
+                            </span>
+                        </div>
+                        <div class="">
+                            <i class="fa fa-envelope-o"></i>
+                            <span>
+                                <h5>nodabark@gmail.com</h5>
+                                <p>Email us your query</p>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="contact-col">
+
+                            <form action="form-handler.php" method="post">
+                                <input type="text" name="name"  placeholder="Enter your name" required>
+                                <input type="email" name="email" placeholder="Enter email address" required>
+                                <input type="text" name="subject" placeholder="Enter subject" required>
+                                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                                <button class="hero-btn red-btn" >Send Message</button>
+                            </form>
+            
+            
+            
+                        </div>
+            
+                </div>
+               
+            </section>
+
+            
+
+
+            
+                   
+    
+    </main>
+
+         <!-- ------ Footer ---- -->
+
+
+         <footer>
+
+            <section class="footer">
+                <h4>About US</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ratione corporis, doloribus nulla cumque earum <br>
+                    dignissimos quis tempora placeat expedita a perferendis esse voluptas minus id. Nisi sint velit labore.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        
+                    </div>
+                    <p>Noda Bark and Board <i class="fa-solid fa-copyright">2022</i></p>
+            </section>
+        
+         </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
