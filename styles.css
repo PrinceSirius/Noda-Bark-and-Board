@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'indie flower', sans-serif;
 }
 
 .header {
@@ -14,6 +14,31 @@
     position: relative;
 }
 
+/* Color for the background of the pages */
+
+.about {
+    background: #53565A;
+}
+
+.home {
+    background: #53565A;
+}
+
+.pricing {
+    background: #53565A;
+}
+
+.blog {
+    background: #53565A;
+    
+}
+
+.contact {
+    background: #53565A;
+
+}
+
+/* Navbar section */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -57,6 +82,10 @@ nav {
     font-size: 20px;
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 .text-box {
     width: 90%;
     color: #fff;
@@ -73,7 +102,7 @@ nav {
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .text-box a {
@@ -86,7 +115,7 @@ nav {
     color: #fff;
     border: solid 1px #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
     background: transparent;
     position: relative;
 }
@@ -131,6 +160,30 @@ nav .fa{
         padding: 30px;
     }
 
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url(/img/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(/img/icon-close.svg);
+    }
+    
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid white;
+        outline-offset: 5px;
+    }
+
 }
 
 /* About US */
@@ -143,14 +196,17 @@ nav .fa{
 
 }
 
+
+
 h1 {
     font-size: 36px;
     font-weight: 600;
+    color: lightskyblue;
 }
 
 p {
-    color: #777;
-    font-size: 14px;
+    color: #fff;;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -171,6 +227,15 @@ p {
     box-sizing: border-box;
 }
 
+.about-col1 > ul {
+    list-style: none;
+    color: #FFF;
+}
+
+ul > li {
+    padding-block: 10px;
+}
+
 h3 {
     text-align: center;
     font-weight: 600;
@@ -182,58 +247,6 @@ h3 {
 }
 
 /* SlideShow for About page! Will work on making it responsive */
-.slide {
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
-    position: relative;
-    background-color: #fff;
-    border: 8px solid #fff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  .slide > div {
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-    animation: slide 25s infinite;
-    opacity: 0;
-  }
-
-  .slide > div:nth-child(2) {
-    animation-delay: 5s;
-  }
-  .slide > div:nth-child(3) {
-    animation-delay: 10s;
-  }
-  .slide > div:nth-child(4) {
-    animation-delay: 15s;
-  }
-  .slide > div:nth-child(5) {
-    animation-delay: 20s;
-  }
-
-  @keyframes slide {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    transform: scale(1.2);
-  }
-}
-
-@media(max-width: 700px){
-    .row {
-        flex-direction: column;
-    }
-}
 
 /* Facility */
 
@@ -311,9 +324,13 @@ h3 {
     border-radius: 10px;
 }
 
-.ourRooms-col p {
+.ourRooms-col  p {
     padding: 0;
 
+}
+ 
+.ourRooms h3 {
+    color: #fff;
 }
 
 .ourRooms-col h3 {
@@ -336,14 +353,17 @@ h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #f3fdff;
+    background: lightskyblue;
     padding: 25px;
     cursor: pointer;
     display: flex;
 }
 
+
+
 .testimonials-col img{
     height: 40px;
+    align-items: center;
     margin-left: 5px;
     margin-right: 30px;
     border-radius: 50%;
@@ -388,6 +408,7 @@ h3 {
 
 .bam h1 {
     color: #fff;
+    font-size: 15px;
     margin-bottom: 40px;
     padding: 0;
 }
@@ -405,6 +426,7 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    
 }
 
 .footer h4 {
@@ -503,7 +525,7 @@ h3 {
 }
 
 .blog-left p {
-    color: #999;
+    color: rgb(207, 204, 204);
     padding: 0;
 }
 
@@ -523,7 +545,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #555;
+    color: #FFF;
     padding: 8px;
     box-sizing: border-box;
 }
@@ -602,7 +624,7 @@ h3 {
 .contact-col div h5 {
     font-size: 20px;
     margin-bottom: 5px;
-    color: #555;
+    color: #FFF;
     font-weight: 400;
 }
 
